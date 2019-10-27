@@ -1,7 +1,7 @@
 ---
-title: 'Embedding'
+title: Embedding
 authors: ['CompuIves']
-description: "It's possible to embed a sandbox on Medium and other websites."
+description: It's possible to embed a sandbox on Medium and other websites.
 ---
 
 ## What is an Embed?
@@ -9,8 +9,8 @@ description: "It's possible to embed a sandbox on Medium and other websites."
 CodeSandbox has a separate application for the embed. This application is
 specifically built to be as small as possible. If you replace `s` in the URL of
 a sandbox to `embed` you have the embed version of the sandbox. Example:
-https://codesandbox.io/s/new => https://codesandbox.io/embed/new. Notice
-that the embed doesn't have all features of the full editor.
+https://codesandbox.io/s/new => https://codesandbox.io/embed/new. Notice that
+the embed doesn't have all features of the full editor.
 
 ## Generate a URL
 
@@ -62,11 +62,18 @@ This embed is focused on being as light as possible:
 
 Use this code to embed:
 
-`<iframe src="https://codesandbox.io/embed/new?codemirror=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`
+```html
+<iframe
+  src="https://codesandbox.io/embed/new?codemirror=1"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+```
 
 That will give to a result like this:
 
-<iframe src="https://codesandbox.io/embed/new?codemirror=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/new?codemirror=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 ### Code Example Embed
 
@@ -77,8 +84,15 @@ is only supported with the CodeMirror editor currently:
 
 Use this code to embed:
 
-`<iframe src="https://codesandbox.io/embed/new?codemirror=1&highlights=11,12,13,14" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`
+```html
+<iframe
+  src="https://codesandbox.io/embed/new?codemirror=1&highlights=11,12,13,14"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+```
 
 That will give to a result like this:
 
-<iframe src="https://codesandbox.io/embed/new?codemirror=1&highlights=11,12,13,14" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/new?codemirror=1&highlights=11,12,13,14" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
